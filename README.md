@@ -3,7 +3,7 @@
 
 - 🔭 I’m currently working on **Student at Da Lat Universiy**
 
-- 🌱 I’m currently learning **Udemy Course, Youtube, Document Google,...**
+- 🌱 I’m currently learning **Full-Stack F8, Udemy Course, Youtube, W3Schools,...**
 
 - 👯 I’m looking to collaborate on [Github](https://github.com/dominic-pts)
 
