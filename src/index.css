@@ -1,0 +1,160 @@
+
+
+/*=============== VARIABLES CSS ===============*/
+:root {
+  /*========== Colors ==========*/
+  --primary-color         : #186ab4;
+  --secondary-color       : #475164;
+  --text-title-color      : #262626;
+  --text-description-color: #262626;
+  --white-color           : #ffffff;
+  --black-color           : #000000;
+  --red-color             : #ff0000;
+  --green-color           : #09ff00;
+  --grey-color            : #757575;
+  --gray-color            : #e2e0e0;
+  --border-color          : #ced4da;
+
+  /*========== Font and typography ==========*/
+  /* --font-family      : "Oswald", sans-serif; */
+  --font-size-biggest: 3.75rem;
+  --font-size-bigger : 2.625rem;
+  --font-size-big    : 2.5rem;
+  --font-size-medium : 1.75rem;
+  --font-size-normal : 1.5rem;
+  --font-size-small  : 1.375rem;
+
+  /*========== z index ==========*/
+  --z-index-100: 100;
+  --z-index-10 : 10;
+  --z-index-1  : 1;
+}
+
+
+body {
+  
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing : antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  .containers {
+    max-width: 1400px;
+    margin   : 0 auto;
+  }
+
+  .mtb {
+    margin: 150px 0;
+  }
+
+  .btn__primary {
+    border-radius : 30px;
+    font-family   : Oswald, sans-serif;
+    min-width     : 250px;
+    width         : max-content;
+    background    : var(--primary-color);
+    color         : var(--white-color);
+    font-size     : 18px;
+    font-weight   : var(--font-weight-title);
+    padding       : 10px;
+    text-align    : center;
+    outline       : 0;
+    border        : 0;
+    cursor        : pointer;
+    letter-spacing: 0.5px;
+    text-wrap     : nowrap;
+  }
+
+  @media (max-width: 550px) {
+    .request-info-content {
+      height    : auto !important;
+      margin-top: 100px;
+    }
+
+    .form {
+      grid-template-columns: 1fr !important;
+      gap                  : 20px !important;
+    }
+
+    .seat {
+      height: 25px !important;
+      width : 30px !important;
+      margin: 5px !important;
+
+    }
+
+    .form-col {
+      gap: 20px !important;
+    }
+
+    .payment {
+      margin-top: 50px;
+    }
+
+    .backlove {
+      width           : 100vw;
+      align-items     : center;
+      justify-content : center;
+      display         : flex;
+      flex-direction  : column;
+      background-color: #f0f0f0;
+      overflow        : hidden;
+    }
+
+    .seat:nth-of-type(2) {
+      margin-right: 10px !important;
+    }
+
+    .seat:nth-last-of-type(2) {
+      margin-left: 10px !important;
+    }
+  }
+
+  @media (max-width: 1024px) {
+    .containers {
+      max-width: 90vw;
+    }
+
+    .booking-container {
+      height     : auto !important;
+      padding-top: 100px;
+    }
+
+    .seat {
+      height: 35px;
+      width : 40px;
+    }
+
+    .row {
+      flex-wrap: nowrap;
+    }
+  }
+
+  @media (min-width: 1024px) and (max-width: 1300px) {
+    .containers {
+      max-width: 85vw;
+
+    }
+
+
+  }
+
+  @media (min-width: 1301px) {
+    .containers {
+      max-width: 95vw;
+    }
+  }
+
+}
+
+.hidden-y {
+  overflow-y   : hidden !important;
+  padding-right: 17px;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
